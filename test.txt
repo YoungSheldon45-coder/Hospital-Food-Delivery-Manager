@@ -1,0 +1,26 @@
+USER URLS
+
+http://localhost:5000/api/auth/register
+http://localhost:5000/api/auth/login
+http://localhost:5000/api/auth/profile
+
+
+
+DIET CHART URLS
+
+http://localhost:5000/api/diet-charts
+http://localhost:5000/api/diet-charts/:id
+
+
+
+PATIENTS
+
+http://localhost:5000/api/patients 
+http://localhost:5000/api/patients
+http://localhost:5000/api/patients/:id
+http://localhost:5000/api/patients/:id
+
+
+TASKS
+
+http://localhost:5000/api/tasks

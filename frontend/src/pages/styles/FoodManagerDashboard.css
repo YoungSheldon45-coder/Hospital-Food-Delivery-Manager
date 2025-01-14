@@ -1,0 +1,189 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Page Title */
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Styling */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Link Styling */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Buttons in Actions */
+  .patient-actions button:first-child {
+    background-color: #007bff;
+  }
+
+  .task-actions button:first-child {
+    background-color: #007bff;
+  }
+  
+  .patient-actions button:last-child {
+    background-color: #dc3545;
+  }
+
+  .task-actions button:last-child {
+    background-color: #dc3545;
+  }
+  
+  /* Patient Cards */
+  .patient-cards-container, .task-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .patient-card, .task-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 20px); /* Three cards per row */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .patient-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .patient-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .task-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .patient-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  .task-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  thead th {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .patient-card {
+      width: calc(50% - 20px); /* Two cards per row */
+    }
+  
+    table thead th,
+    table tbody td {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .patient-card {
+      width: 100%; /* Full-width cards for small screens */
+    }
+  }
+  

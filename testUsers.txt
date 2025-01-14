@@ -1,0 +1,21 @@
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "SecurePass123",
+    "role": "manager",
+    "contactNumber": "1234567890"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "password": "Password456",
+    "role": "pantry_staff",
+    "contactNumber": "9876543210"
+  },
+  {
+    "name": "Mark Johnson",
+    "email": "mark.johnson@example.com",
+    "password": "MyPass789",
+    "role": "delivery_personnel",
+    "contactNumber": "4567891230"
+  }
