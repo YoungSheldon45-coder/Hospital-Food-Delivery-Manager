@@ -8,7 +8,7 @@ import {
   getPatientById,
   updatePatient,
   deletePatient
-} from "../controllers/patientController.js";
+} from "../api/patientController.js";
 
 // Routes
 router.get("/", getPatients); // Get all patients

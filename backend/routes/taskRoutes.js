@@ -1,6 +1,6 @@
 import { Router } from "express";
 const router = Router();
-import { getTasks, createTasks, updateTaskStatus, getTaskById, deleteTask } from "../controllers/taskController.js";
+import { getTasks, createTasks, updateTaskStatus, getTaskById, deleteTask } from "../api/taskController.js";
 
 // Protected routes (Accessible by Manager and Pantry Staff)
 router.get("/",  getTasks);                   // Get all tasks

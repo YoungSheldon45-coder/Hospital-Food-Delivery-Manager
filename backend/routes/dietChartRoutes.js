@@ -1,6 +1,6 @@
 import { Router } from "express";
 const router = Router();
-import { getDietCharts, createDietChart, updateDietChart, deleteDietChart, getDietChartForPatient } from "../controllers/dietChartController.js";
+import { getDietCharts, createDietChart, updateDietChart, deleteDietChart, getDietChartForPatient } from "../api/dietChartController.js";
 
 // Protected routes (Accessible by Manager and Pantry Staff)
 router.get("/", getDietCharts); // Get all diet charts

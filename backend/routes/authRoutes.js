@@ -1,8 +1,8 @@
 import { Router } from "express";
 const router = Router();
-import { registerUser } from "../controllers/authController.js";
-import { loginUser } from "../controllers/authController.js";
-import { getUserProfile } from "../controllers/authController.js";
+import { registerUser } from "../api/authController.js";
+import { loginUser } from "../api/authController.js";
+import { getUserProfile } from "../api/authController.js";
 
 // Public routes
 router.post("/register", registerUser); // Register a new user
